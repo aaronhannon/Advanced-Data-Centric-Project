@@ -8,25 +8,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Delete Loan</title>
-
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 	<body>
-		<h1>Delete Loan</h1>
-		<form:form modelAttribute="LoanDelete">
-		  <table>
-		    <tr>
-		      <td>Loan ID:</td>
-		      <td><form:input path="lid"></form:input></td>
-		    </tr>
-		    
-		    <tr>
-		      <td colspan="2">
-		        <input type="submit" value="Delete"/>
-		      </td>
-		    </tr>
-		  </table>
-		</form:form>
-		<p><a href="index.html">Home</a> <a href="/showBooks">List Books</a> <a href="/showCustomers">List Customers</a> 
-			<a href="/showLoans">List Loans</a> <a href="/newLoan">New Loan</a></p>
+	
+		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="/showBooks">List Books</a></li>
+		  <li><a href="/showCustomers">List Customers</a></li>
+		  <li><a href="/showLoans">List Loans</a></li>
+		  <li><a href="/newLoan">New Loan</a></li>
+		</ul>
+	
+		<div class="main">
+			<h1>Delete Loan</h1>
+			<form:form modelAttribute="LoanDelete">
+			  <table>
+			    <tr>
+			      <td><h2>Loan ID:</h2></td>
+			      <td><form:input path="lid"></form:input></td>
+			    </tr>
+			    
+			    <tr>
+			      <td colspan="3">
+			        <input class="button" type="submit" value="Delete"/>
+			      </td>
+			    </tr>
+			  </table>
+			</form:form>
+		</div>
 	</body>
 </html>

@@ -34,7 +34,7 @@
 			</tr>
 		
 			<tr>
-				<td><h3>${customer.cName} Loans:</h3></td>
+				<td><h3>${customer.cName}'s Loans:</h3></td>
 			</tr>
 		
 			<table class="c">
