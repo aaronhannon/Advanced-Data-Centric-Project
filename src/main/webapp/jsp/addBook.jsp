@@ -8,33 +8,43 @@
 <head>
     <meta charset="UTF-8">
     <title>ADD BOOK</title>
-    
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 	<body>
+	
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="/showBooks">List Book</a></li>
+	  <li><a href="/addCustomer">Add Customer</a></li>
+	  <li><a href="/newLoan">New Loan</a></li>
+	</ul>
+	
+	<div class="main">
 		<h1>Add Book</h1>
 		<form:form modelAttribute="BookAdd">
 		  <table>
 		    <tr>
-		      <td>Title:</td>
+		      <td><h2>Title:</h2></td>
 		      <td><form:input path="title"></form:input></td>
-		      <!-- where error us outputed -->
-		      <td><form:errors path="title"></form:errors></td>
+		      <!-- where error is outputted -->
+		      <td class="error"><form:errors path="title"></form:errors></td>
 		    </tr>
 		    
+		    <tr></tr>
+		    
    		    <tr>
-		      <td>Author:</td>
+		      <td><h2>Author:</h2></td>
 		      <td><form:input path="author"></form:input></td>
-		      <!-- where error us outputed -->
-		      <td><form:errors path="author"></form:errors></td>
+		      <!-- where error is outputted -->
+		      <td class="error"><form:errors path="author"></form:errors></td>
 		    </tr>
 		    <tr>
-		      <td colspan="2">
-		        <input type="submit" value="Add"/>
+		      <td colspan="3">
+		        <input class="button" type="submit" value="Add"/>
 		      </td>
 		    </tr>
 		  </table>
 		</form:form>
-		<p><a href="index.html">Home</a> <a href="showBooks">List Book</a> <a href="/addCustomer">Add Customer</a> 
-		<a href="/newLoan">new Loans</a></p>
+	</div>
 	</body>
 </html>

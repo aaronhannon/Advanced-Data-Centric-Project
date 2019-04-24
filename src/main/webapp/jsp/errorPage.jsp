@@ -5,16 +5,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
-        <title>ERROR</title>
+        <title>LOAN ERROR</title>
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         
+   	<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="/showBooks">List Books</a></li>
+	  <li><a href="/showCustomers">List Customers</a></li>
+	  <li><a href="/newLoan">New Loan</a></li>
+	  <li><a href="/deleteLoan">Delete Loan</a></li>
+	  <li style="float:right"><a href="/logout">Logout</a></li>
+	</ul>    
+    
+	<div class="main">
         <h1>${exception.header}</h1>
         <h2>${exception.error}</h2>
-        
-       	<p><a href="index.html">Home</a> <a href="/showBooks">List Books</a> <a href="/showCustomers">List Customers</a> 
-			<a href="/showLoans">List Loans</a> <a href="/newLoan">New Loan</a></p>
+	</div>
     </body>
 </html>	
 

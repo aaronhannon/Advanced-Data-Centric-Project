@@ -7,7 +7,6 @@ table, th, td {
 }
 
 
-
 th{
 	background-color: #212121;
 	font-weight: bold;
@@ -62,8 +61,8 @@ body{
 	height: 500px;
 	text-align: center;
 	color: #ffffff;
-	font-family: monospace;
 }
+
 
 .center{
 	padding: 250px 0;
@@ -80,4 +79,28 @@ h2{
 	font-family: monospace;
 	color: #ffffff;
 }
+
+input{
+	width: 450px;
+	height: 30px;
+	font-family: monospace;
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	background-color: #ffffff;
+	font-weight: bold;
+}
+
+input.button{
+	margin-top: 20px;
+	height: 50px;
+	width: 100px;
+}
+
+td.error{
+	background-color: #333;
+}
+
+
+
 
